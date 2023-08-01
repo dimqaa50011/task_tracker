@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "task-tracker"
+version = "0.1.0"
+description = ""
+authors = ["Dmitry <dz5011@yandex.ru>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "task_tracker"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+django = "<3.3"
+environs = "9.5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
