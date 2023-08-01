@@ -7,4 +7,5 @@ app_name = MainappConfig.name
 
 urlpatterns = [
     path('', mainapp_views.MainPageView.as_view(), name='main_page'),
+    path('new/', mainapp_views.NewTaskPAgeView.as_view(), name='new_task'),
 ]

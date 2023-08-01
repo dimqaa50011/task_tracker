@@ -74,6 +74,10 @@
     margin-bottom: 10px;
     width: 100%;
 }
+/* .field_item {
+    display: flex;
+    justify-items: ;
+} */
 .form {
     width: 25%;
     margin: 50px auto;
