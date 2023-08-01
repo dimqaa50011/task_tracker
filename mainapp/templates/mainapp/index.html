@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main>
+        <div class="tasks">
+            <ul class="tasks_list">
+                <li class="task_item">
+                    <p>Научиться верстать</p>
+                    <div>
+                        <button class="btn ">
+                            <a href="#">Выполнено</a>
+                        </button>
+                        <button class="btn">
+                            <a href="./task_detail.html">Детали</a>
+                        </button>
+                    </div>
+                </li>
+                <li class="task_item">
+                    <p>Научиться делать безопасные приложения на fastapi</p>
+                    <div>
+                        <button class="btn ">
+                            <a href="#">Выполнено</a>
+                        </button>
+                        <button class="btn">
+                            <a href="#">Детали</a>
+                        </button>
+                    </div>
+                </li>
+                <li class="task_item">
+                    <p>ОПтимизировать свой рабочий день</p>
+                    <div>
+                        <button class="btn ">
+                            <a href="#">Выполнено</a>
+                        </button>
+                        <button class="btn">
+                            <a href="#">Детали</a>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            <div class="btn_block">
+                <button class="btn">
+                    <a href="./new_task.html">Добавить задачу</a>
+                </button>
+            </div>
+        </div>
+    </main>
+{% endblock content %}
