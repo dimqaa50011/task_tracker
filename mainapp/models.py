@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from django.urls import reverse
 
 
 class Task(models.Model):
@@ -13,3 +14,7 @@ class Task(models.Model):
     updated_at = models.DateTimeField(
         _('date updated'), auto_now=True
     )
+    
+    def get_absolute_url(self):
+        return reverse("mainapp:new_task", kwargs={"pk": self.pk})
+    

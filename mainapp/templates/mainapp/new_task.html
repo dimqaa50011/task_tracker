@@ -1,14 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
     <main>
-        <form action="">
+        <form action="{% url 'mainapp:new_task' %}" method="post">
+            {% csrf_token %}
+            
             <div class="field">
                 <div class="field_item">
-                    <p>Текст задачи</p>
-                    <textarea name="new_task" id="new_task" cols="30" rows="10"></textarea>
+                    {{ form.as_p }}
+                    {% comment %} <p>Текст задачи</p>
+                    <textarea name="new_task" id="new_task" cols="30" rows="10"></textarea> {% endcomment %}
                 </div>
             </div>
-            <input type="button" value="Создать" class="btn">
+            <input type="submit" value="Создать" class="btn">
         </form>
     </main>
 {% endblock content %}
